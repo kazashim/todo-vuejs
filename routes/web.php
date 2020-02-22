@@ -23,3 +23,7 @@ Route::get('/sk-layout-2-columns', 'StaterkitController@columns_2');
 Route::get('/sk-layout-fixed-navbar', 'StaterkitController@fixed_navbar');
 Route::get('/sk-layout-floating-navbar', 'StaterkitController@floating_navbar');
 Route::get('/sk-layout-fixed', 'StaterkitController@fixed_layout');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
