@@ -1,4 +1,4 @@
-;(function(){
+(function(){
   /* ========================================================================
    * Bootstrap: transition.js v3.0.2
    * http://getbootstrap.com/javascript/#transitions
