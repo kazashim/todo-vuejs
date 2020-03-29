@@ -100,7 +100,7 @@
   display: none;
 }
 
-.apexcharts-tooltip-text-value, 
+.apexcharts-tooltip-text-value,
 .apexcharts-tooltip-text-z-value {
   font-weight: 600;
 }
@@ -109,7 +109,7 @@
   width: 12px;
   height: 12px;
   position: relative;
-  top: 0px;
+  top: 0;
   margin-right: 10px;
   border-radius: 50%;
 }
@@ -370,13 +370,13 @@
   pointer-events: none;
 }
 
-.apexcharts-zoom-icon, 
+.apexcharts-zoom-icon,
 .apexcharts-zoom-in-icon,
 .apexcharts-zoom-out-icon,
-.apexcharts-reset-zoom-icon, 
-.apexcharts-pan-icon, 
+.apexcharts-reset-zoom-icon,
+.apexcharts-pan-icon,
 .apexcharts-selection-icon,
-.apexcharts-menu-icon, 
+.apexcharts-menu-icon,
 .apexcharts-toolbar-custom-icon {
   cursor: pointer;
   width: 20px;
@@ -387,7 +387,7 @@
 }
 
 
-.apexcharts-zoom-icon svg, 
+.apexcharts-zoom-icon svg,
 .apexcharts-zoom-in-icon svg,
 .apexcharts-zoom-out-icon svg,
 .apexcharts-reset-zoom-icon svg,
@@ -399,27 +399,27 @@
   transform: scale(0.76)
 }
 
-.dark .apexcharts-zoom-icon svg, 
+.dark .apexcharts-zoom-icon svg,
 .dark .apexcharts-zoom-in-icon svg,
 .dark .apexcharts-zoom-out-icon svg,
-.dark .apexcharts-reset-zoom-icon svg, 
-.dark .apexcharts-pan-icon svg, 
+.dark .apexcharts-reset-zoom-icon svg,
+.dark .apexcharts-pan-icon svg,
 .dark .apexcharts-selection-icon svg,
-.dark .apexcharts-menu-icon svg, 
+.dark .apexcharts-menu-icon svg,
 .dark .apexcharts-toolbar-custom-icon svg{
   fill: #f3f4f5;
 }
 
-.apexcharts-canvas .apexcharts-zoom-icon.selected svg, 
-.apexcharts-canvas .apexcharts-selection-icon.selected svg, 
+.apexcharts-canvas .apexcharts-zoom-icon.selected svg,
+.apexcharts-canvas .apexcharts-selection-icon.selected svg,
 .apexcharts-canvas .apexcharts-reset-zoom-icon.selected svg {
   fill: #008FFB;
 }
 .light .apexcharts-selection-icon:not(.selected):hover svg,
-.light .apexcharts-zoom-icon:not(.selected):hover svg, 
-.light .apexcharts-zoom-in-icon:hover svg, 
-.light .apexcharts-zoom-out-icon:hover svg, 
-.light .apexcharts-reset-zoom-icon:hover svg, 
+.light .apexcharts-zoom-icon:not(.selected):hover svg,
+.light .apexcharts-zoom-in-icon:hover svg,
+.light .apexcharts-zoom-out-icon:hover svg,
+.light .apexcharts-reset-zoom-icon:hover svg,
 .light .apexcharts-menu-icon:hover svg {
   fill: #333;
 }
@@ -446,7 +446,7 @@
   transform: scale(0.62);
   position: relative;
   left: 1px;
-  top: 0px;
+  top: 0;
 }
 .apexcharts-pan-icon svg {
   fill: #fff;
@@ -463,15 +463,15 @@
 .apexcharts-toolbar {
   position: absolute;
   z-index: 11;
-  top: 0px;
+  top: 0;
   right: 3px;
   max-width: 176px;
   text-align: right;
   border-radius: 3px;
-  padding: 0px 6px 2px 6px;
+  padding: 0 6px 2px;
   display: flex;
   justify-content: space-between;
-  align-items: center; 
+  align-items: center;
 }
 
 .apexcharts-toolbar svg {
@@ -518,7 +518,7 @@
 
   .apexcharts-canvas:hover .apexcharts-toolbar {
     opacity: 1;
-  } 
+  }
 }
 
 .apexcharts-datalabel.hidden {
